@@ -56,7 +56,7 @@ class PostsController < ApplicationController
   end
 
   def check_if_correct_user
-    @post.user_id == current_user.id ? true : false
+    @post.user_id == current_user.id
   end
 
 end
