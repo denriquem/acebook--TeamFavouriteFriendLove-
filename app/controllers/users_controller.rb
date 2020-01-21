@@ -20,6 +20,12 @@ class UsersController < Clearance::UsersController
     end
   end
 
+  before_action :require_login
+
+  def wall
+    @posts = Post.all
+  end
+
   private
 
   def redirect_signed_in_users
