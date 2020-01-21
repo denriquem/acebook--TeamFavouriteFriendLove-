@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(post_params)
+    @post = current_user.posts.create(post_params)
     redirect_to posts_url
   end
 
@@ -46,4 +46,9 @@ class PostsController < ApplicationController
   def above_10_mins_post
     Time.now.utc > (@post.created_at.utc + 10.minutes).utc
   end
+
+  def check_if_correct_user
+    @post.user_id == current_user.id ? true : false
+  end
+
 end
