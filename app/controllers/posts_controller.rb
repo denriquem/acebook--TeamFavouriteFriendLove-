@@ -43,6 +43,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    @user = User.all
   end
 
   private
@@ -55,8 +56,11 @@ class PostsController < ApplicationController
     Time.now.utc > (@post.created_at.utc + 10.minutes).utc
   end
 
+<<<<<<< HEAD
   def check_if_correct_user
     @post.user_id == current_user.id
   end
 
+=======
+>>>>>>> caa4649390ef3045be0d5fde55ef25fcbca16ba1
 end
