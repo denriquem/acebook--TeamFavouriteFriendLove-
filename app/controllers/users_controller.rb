@@ -20,6 +20,10 @@ class UsersController < Clearance::UsersController
     end
   end
 
+  def wall
+    @posts = Post.all
+  end
+
   private
 
   def redirect_signed_in_users

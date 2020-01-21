@@ -1,6 +1,7 @@
 RSpec.feature "Timeline", type: :feature do
   scenario "User can submit posts and view them in reverse chronological order" do
     sign_up
+    visit '/posts'
     click_link "New post"
     fill_in "Message", with: "Hello, world!"
     click_button "Submit"
