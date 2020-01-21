@@ -1,10 +1,14 @@
 require 'rails_helper'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> fda43269112887e2192f2cc5475e2c1c0bda21a8
 def sign_up(email, password)
   visit('/sign_up')
   fill_in 'user_email', with: email
   fill_in 'user_password', with: password
+<<<<<<< HEAD
 =======
 def sign_up
   visit '/sign_up'
@@ -12,6 +16,10 @@ def sign_up
   fill_in 'user_password', with: 'p123456'
   fill_in 'confirmation-password', with: 'p123456'
 >>>>>>> caa4649390ef3045be0d5fde55ef25fcbca16ba1
+=======
+
+
+>>>>>>> fda43269112887e2192f2cc5475e2c1c0bda21a8
   click_on 'Sign up'
 end
 
