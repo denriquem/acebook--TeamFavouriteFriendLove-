@@ -17,6 +17,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
+
     if check_if_correct_user
       if above_10_mins_post
         redirect_to posts_path, flash: { error: "Unable to edit post over 10 mins after creation" }
@@ -25,6 +26,7 @@ class PostsController < ApplicationController
       else
         render 'edit'
       end
+
     else
       flash.now[:error] = "You are not logged in as the correct user"
       render 'edit'
@@ -43,6 +45,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all
+    @user = User.all
   end
 
   private
@@ -55,8 +58,10 @@ class PostsController < ApplicationController
     Time.now.utc > (@post.created_at.utc + 10.minutes).utc
   end
 
+
   def check_if_correct_user
     @post.user_id == current_user.id
   end
+
 
 end
