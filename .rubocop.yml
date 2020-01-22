@@ -63,6 +63,12 @@ Metrics/BlockLength:
     - 'test/**/*'
     - '**/vendor/**/*'
 
+Metrics/AbcSize:
+  Max: 20    
+
+Metrics/MethodLength:
+  Max: 20
+
 # Code Style
 # ==========
 #
