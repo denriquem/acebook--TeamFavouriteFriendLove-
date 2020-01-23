@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(post_params)
+    @post = current_user.posts.create(post_params)
     redirect_to posts_url
   end
 
@@ -18,7 +18,10 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
 
-    if above_10_mins_post
+    if !check_if_correct_user
+      flash.now[:error] = "You are not logged in as the correct user"
+      render 'edit'
+    elsif above_10_mins_post
       redirect_to posts_path, flash: { error: "Unable to edit post over 10 mins after creation" }
     elsif @post.update(post_params)
       redirect_to posts_url, :notice => "Successfully edited the message"
@@ -29,12 +32,17 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id])
-    @post.destroy
-    redirect_to posts_url, :notice => "Your post has been deleted"
+    if check_if_correct_user
+      @post.destroy
+      redirect_to posts_url, :notice => "Your post has been deleted"
+    else
+      redirect_to posts_url, :notice => "You are not logged in as the correct user"
+    end
   end
 
   def index
     @posts = Post.all
+    @user = User.all
   end
 
   private
@@ -45,6 +53,10 @@ class PostsController < ApplicationController
 
   def above_10_mins_post
     Time.now.utc > (@post.created_at.utc + 10.minutes).utc
+  end
+
+  def check_if_correct_user
+    @post.user_id == current_user.id
   end
 
 end
