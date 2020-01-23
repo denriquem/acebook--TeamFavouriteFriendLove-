@@ -7,6 +7,6 @@ RSpec.feature "Timeline", type: :feature do
     visit "/posts"
     new_post("Goodbye, world!")
     time_for_goodbye = DateTime.now.strftime("%d %b %C%y %H:%M:%S")
-    expect(page.text).to have_content("Goodbye, world! #{time_for_goodbye} Edit Delete Hello, world! #{time_for_hello}")
+    expect(page.text).to have_content("Goodbye, world! #{time_for_goodbye} test1@example.com Edit Delete Hello, world! #{time_for_hello}")
   end
 end
