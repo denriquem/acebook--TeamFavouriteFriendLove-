@@ -28,7 +28,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap', '~> 4.1.1'
 gem 'clearance'
-gem 'factory_bot_rails'
 gem 'jquery-rails'
 gem 'rubocop', '~> 0.71.0', require: false
 gem 'simplecov', require: false
