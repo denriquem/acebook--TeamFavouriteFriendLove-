@@ -8,11 +8,25 @@
     <meta name="viewport" content="width=device-with, initial-scale=1">
   </head>
   <body>
-<%# <header class="container">
-  <nav class="navbar navbar-light bg-light text-center">
-    <a class="navbar-brand" href="/">Acebook</a>
-    <form class="form-inline">
-      <div class="container"> %>
+
+<nav class="navbar">
+  <a class="navbar-brand" href="/">Acebook</a>
+  <form class="form-inline">
+    <a class="btn btn-outline-primary" href="/sign_in" role="button">
+    Login
+    </a>
+    <div style="padding-left: 10px;">
+      <a class="btn btn-outline-success" href="/sign_up" role="button">
+      Sign Up
+      </a>
+    </div>
+  </form>
+</nav>
+
+<div class="header-fb">
+  <a class="navbar-brand" href="/"></a>
+  
+    <div>
       <% if signed_in? %></div>
         Signed in as: <%= current_user.email %>
         <%= button_to 'Sign out', sign_out_path, method: :delete %>
@@ -20,19 +34,15 @@
         <%= link_to 'Sign in', sign_in_path %>
       <% end %>
       <div style="padding-left: 10px;">
-      <%# </div>
-    </form>
-  </nav>
-  </header> %>
-
-
-<%# <section class="container"> %>
+      </div>
+  
   <div id="flash">
     <% flash.each do |key, value| %>
     <div class="flash <%= key %>"><%= value %></div>
     <% end %>
     </div>
-    <%# </section> %>
     <%= yield %>
+</div>
+    </div>
   </body>
 </html>

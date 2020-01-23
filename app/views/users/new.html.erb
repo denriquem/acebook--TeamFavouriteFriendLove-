@@ -1,16 +1,20 @@
+<div class="container text-right">
 <div id="clearance" class="sign-up">
   <h2><%= t(".title") %></h2>
 
   <%= form_for @user do |form| %>
     <%= render partial: '/users/form', object: form %>
-    <label for='confirmation-password'>Confirmation password</label>
-    <input type='password' name='confirmation-password'>
+    <label for='confirmation-password' ></label>
+    <input type='password' name='confirmation-password' placeholder="Confirmation password">
     <div class="submit-field">
-      <%= form.submit %>
+      <%# <%= form.submit %> 
+      <%= form.submit("Sign up", class: "btn btn-default" ) %>
+
     </div>
 
     <div class="other-links">
       <%= link_to t(".sign_in"), sign_in_path %>
     </div>
   <% end %>
+</div>
 </div>
