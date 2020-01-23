@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap', '~> 4.1.1'
 gem 'clearance'
+gem 'factory_bot_rails'
 gem 'jquery-rails'
 gem 'rubocop', '~> 0.71.0', require: false
 gem 'simplecov', require: false
@@ -41,6 +42,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
+  gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.5'
   gem 'selenium-webdriver'
 end
