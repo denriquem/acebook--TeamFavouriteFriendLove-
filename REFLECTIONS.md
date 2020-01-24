@@ -6,6 +6,9 @@
 * Everyone said that they worked much better in positive environments so we have been taking steps to keep things positive and moving forward, through communicating clearly and staying focused.
 * Some really great progress has been made in pairing for basic features such as signing in and signing up and editing posts.
 * Correctly setting up Travis with code quality has been very challenging at times and even when it all seemed to be working, we have found some mystery bugs which we are looking into.
-* When were first mobbing on challenges such as sorting out merge conflicts we were pulling all team members in to tackle the problem and then spending huge amounts of time battling away. We realised that this isn't the best use of resources and the time spent mobbing has gone down and we are being more cautious with using our time efficiently.
+* When we were first mobbing on challenges such as sorting out merge conflicts we were pulling all team members in to tackle the problem and then spending huge amounts of time battling away. We realised that this isn't the best use of resources and the time spent mobbing has gone down and we are being more cautious with using our time efficiently.
 * Really great team mentality, lifting each others spirits, checking in with each other and sticking together.
 * At first we were maybe adjusting to working with new team members and we were not working as a team too well. All of us have put in real effort in understanding each other and how to work best together and it feels like much more of a unit.
+* After having an extensive discussion about what our individual goals were for this project; and before moving forward we worked out a compromise and collectively agreed on how our group should progress. We made sure that our team's goal aligned as much as possible with our individual intentions.
+* Our team's production and work flow soared upon acknowledging each others different motivation.
+* A comprehensive understanding of how unit tests can be isolated in the MVC framework.
