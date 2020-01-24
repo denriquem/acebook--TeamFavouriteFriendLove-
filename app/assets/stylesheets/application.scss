@@ -10,66 +10,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- 
+
+ *
+ *= require_tree .
+ *= require_self
  */
+ 
  @import "bootstrap";
-
- body {
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
-  background: pink;
- }
-
- .container {
-  padding-right: 0px;
-  padding-left: 0px;
- }
-
-
-.navbar{
-background: #133783;
-}
-
-.navbar-brand {
-  color:#fff;
-	left:20%;
-	top:25px;
-  font-family: verdana;
-	font-size: 30px;
-	font-weight: bold;
-	
-} 
-
-
-
-input {
-  border: 1px solid #04293b17;
-  border-radius: 7px;
-  color: #393D3F;
-  font-size: 1em;
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 30%;
-}
-
-// .btn {
-//     color: rgb(223, 222, 235);
-//     font-size: 12px;
-//     font-weight: 600;
-//     padding: 6px 20px;
-//     border-radius: 3px;
-//     margin-top: 10px;
-// }
-
-// .submit-field {
-//   width: 100%;
-//   font-size: 12px;
-//   font-weight: 600;
-//   padding: 6px 20px;
-//   border-radius: 3px;
-//   margin-top: 10px;
-//   display: flex;
-//   justify-content: flex-end;
-//   padding-left: 100px;
-// }
