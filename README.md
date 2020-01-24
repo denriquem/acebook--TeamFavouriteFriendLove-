@@ -43,7 +43,7 @@ First, clone this repository. Then:
 * Heroku (hosting platform)
 * Ruby on rails (web application framework)
 * rspec (testing suite)
-* rubocop (makers scaffolint)
+* rubocop (makers scaffolint (linter))
 * simpleCov (test coverage)
 * travis ci (continuous integration)
 
@@ -53,11 +53,15 @@ First, clone this repository. Then:
 * <a href="https://codeclimate.com/github/denriquem/acebook--TeamFavouriteFriendLove-/maintainability"><img src="https://api.codeclimate.com/v1/badges/884d5e66a36e030c967d/maintainability" /></a>
 
 ## Heroku page
+
 * https://warm-everglades-53164.herokuapp.com/
 
 <figure class="image">
   <img src="./images/aceBookSignIn.png" alt="The sign in page">
   <figcaption>The sign in page</figcaption>
+
+  <img src="./images./aceBookUserWall.png" alt="A users wall">
+  <figcaption>A users wall</figcaption>
 </figure>
 
 ## Reflections
@@ -118,6 +122,6 @@ Here is a list of the external resources we used to help our learning:
 
 <details><summary>CLICK ME</summary>
 <p>
-#### The rest of the cohort <3
+<b> The rest of the cohort <3 </b>
 </p>
 </details>
