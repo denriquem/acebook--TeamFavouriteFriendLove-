@@ -40,6 +40,7 @@ First, clone this repository. Then:
 
 ## Technologies
 
+* clearance gem (authentication of users)
 * Heroku (hosting platform)
 * Ruby on rails (web application framework)
 * rspec (testing suite)
@@ -51,6 +52,16 @@ First, clone this repository. Then:
 
 * <a href="https://codeclimate.com/github/denriquem/acebook--TeamFavouriteFriendLove-/test_coverage"><img src="https://api.codeclimate.com/v1/badges/884d5e66a36e030c967d/test_coverage" /></a>
 * <a href="https://codeclimate.com/github/denriquem/acebook--TeamFavouriteFriendLove-/maintainability"><img src="https://api.codeclimate.com/v1/badges/884d5e66a36e030c967d/maintainability" /></a>
+
+### Testing
+
+* Rspec - feature/unit tests
+* SimpleCov - test coverage of 95%+
+
+<figure class="image">
+  <img src="./images/rspec.png" alt="The test ran in rspec">
+  <figcaption>The test ran in rpsec showing the test coverage</figcaption>
+</figure>
 
 ## Heroku page
 

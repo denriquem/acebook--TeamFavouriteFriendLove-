@@ -11,3 +11,4 @@
 * At first we were maybe adjusting to working with new team members and we were not working as a team too well. All of us have put in real effort in understanding each other and how to work best together and it feels like much more of a unit.
 * After having an extensive discussion about what our individual goals were for this project; and before moving forward we worked out a compromise and collectively agreed on how our group should progress. We made sure that our team's goal aligned as much as possible with our individual intentions.
 * Our team's production and work flow soared upon acknowledging each others different motivation.
+* A comprehensive understanding of how unit tests can be isolated in the MVC framework.
