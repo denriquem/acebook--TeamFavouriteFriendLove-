@@ -1,11 +1,17 @@
-# AceBook
+# AceBook - TeamTeamFavouriteFriendLove
 
 ## Overview
 
 This project is a social media webpage that allows users to post messages onto each others walls. They can edit and delete their own posts and interact by viewing other users home pages.
 
+## The team
 
-REQUIRED INSTRUCTIONS:
+- [Shafique](https://github.com/shafali03)
+- [Tuan](https://github.com/TuanNguyen1010)
+- [Danny](https://github.com/denriquem)
+- [Jamie](https://github.com/Jamie95187)
+
+## REQUIRED INSTRUCTIONS:
 
 1. Fork this repository to `acebook-teamname` and customize
 the below**
@@ -13,6 +19,8 @@ the below**
 [You can find the engineering project outline here.](https://github.com/makersacademy/course/tree/master/engineering_projects/rails)
 
 2. The card wall is here: [Trello board link](https://trello.com/b/qeOv6Ec6/acebook-week-8-9)
+
+3. The link to the repository [here](https://github.com/denriquem/acebook--TeamFavouriteFriendLove-)
 
 ## How to contribute to this project
 See [CONTRIBUTING.md](CONTRIBUTING.md)
@@ -39,7 +47,6 @@ First, clone this repository. Then:
 * simpleCov (test coverage)
 * travis ci (continuous integration)
 
-
 ## Code Quality
 
 * <a href="https://codeclimate.com/github/denriquem/acebook--TeamFavouriteFriendLove-/test_coverage"><img src="https://api.codeclimate.com/v1/badges/884d5e66a36e030c967d/test_coverage" /></a>
@@ -47,6 +54,11 @@ First, clone this repository. Then:
 
 ## Heroku page
 * https://warm-everglades-53164.herokuapp.com/
+
+<figure class="image">
+  <img src="./images/aceBookSignIn.png" alt="The sign in page">
+  <figcaption>The sign in page</figcaption>
+</figure>
 
 ## Reflections
 See [REFLECTIONS.md](REFLECTIONS.md)
@@ -100,4 +112,12 @@ Here is a list of the external resources we used to help our learning:
 [signing-up on the app](https://www.learnenough.com/ruby-on-rails-4th-edition-tutorial/sign_up#sec-showing_users)<br>
 [ActiveRecord rails migrations](https://edgeguides.rubyonrails.org/active_record_migrations.html)<br>
 [Video for deleting posts](https://www.youtube.com/watch?time_continue=89&v=wdXgDwk6UO8&feature=emb_title)<br>
-[clearance gem for rails](https://github.com/thoughtbot/clearance)
+[clearance gem for rails](https://github.com/thoughtbot/clearance)<br>
+
+### Most resourceful material?
+
+<details><summary>CLICK ME</summary>
+<p>
+#### The rest of the cohort <3
+</p>
+</details>
